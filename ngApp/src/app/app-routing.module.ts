@@ -8,6 +8,7 @@ import { SpecialEventsComponent } from './core/special-events/special-events.com
 import { AuthGuard } from './shared/guard/auth.guard';
 //mport { EditprofileComponent } from './editprofile/editprofile.component';
 import { EditprofileComponent } from './core/editprofile/editprofile.component';
+import { TrackLocationComponent } from './core/track-location/track-location.component';
 const routes: Routes = [
   {
     path: '',
@@ -37,7 +38,12 @@ const routes: Routes = [
     path: 'editprofile',
     canActivate: [AuthGuard],
     component: EditprofileComponent
- }
+ },
+ {
+  path: 'trackuser',
+  canActivate: [AuthGuard],
+  component: TrackLocationComponent
+}
 ];
 
 @NgModule({

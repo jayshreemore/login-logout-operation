@@ -7,6 +7,7 @@ import { EventService } from '../shared/event.service';
 import { TokenInterceptorService } from '../shared/token-interceptor.service';
 import { AuthGuard } from '../shared/guard/auth.guard';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+//import { TrackLocationComponent } from './track-location/track-location.component';
 @NgModule({
     declarations:[SpecialEventsComponent],
     imports:[coreRouter,CommonModule],

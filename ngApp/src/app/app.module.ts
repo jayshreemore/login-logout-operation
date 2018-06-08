@@ -12,12 +12,15 @@ import { AuthService } from './shared/auth.service';
 import { EventService } from './shared/event.service';
 import { TokenInterceptorService } from './shared/token-interceptor.service';
 import { EditprofileComponent } from './core/editprofile/editprofile.component';
+import { TrackLocationComponent } from './core/track-location/track-location.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    EditprofileComponent
+    EditprofileComponent,
+    TrackLocationComponent
   ],
   imports: [
     BrowserModule,

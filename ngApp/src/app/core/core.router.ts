@@ -5,10 +5,11 @@ import { EventService } from '../shared/event.service';
 import { TokenInterceptorService } from '../shared/token-interceptor.service';
 import { AuthGuard } from '../shared/guard/auth.guard';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { TrackLocationComponent } from './track-location/track-location.component';
 const core_router:Routes=[
     {
       path:'',
       component:SpecialEventsComponent   
-    },  
+    }
 ];
 export const coreRouter =RouterModule.forChild(core_router);
